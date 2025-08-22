@@ -1,8 +1,11 @@
 SOC Analyst Knowledge Framework
 
 Author: Mohammed Touheed Patel
+
 Date: August 21, 2025
+
 Purpose: This document defines the foundational knowledge areas for effective Security Operations Center (SOC) functioning, focusing on alert prioritization, incident classification, and incident response. It is designed to bring consistency, structure, and efficiency to investigations.
+
 1. Alert Priority Levels
 Core Concepts
 
