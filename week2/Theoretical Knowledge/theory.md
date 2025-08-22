@@ -183,7 +183,10 @@ By mastering these three domains—Prioritization, Classification, and Response�
 
 
 ✅ Quick Summary Table
-Domain	Goal	Mini Example
-Alert Prioritization	Assign severity for efficient response	CVSS 9.8 → Critical
-Incident Classification	Categorize incident type with frameworks	Phishing → MITRE T1566
-Incident Response	Contain and eradicate threats	Block malicious sender & reset account
+# Incident Management Quick Reference
+
+| **Domain**                | **Goal**                                       | **Mini Example**                          |
+|----------------------------|-----------------------------------------------|-------------------------------------------|
+| **Alert Prioritization**   | Assign severity for efficient response        | CVSS 9.8 → **Critical**                   |
+| **Incident Classification**| Categorize incident type with frameworks      | Phishing → **MITRE ATT&CK T1566**         |
+| **Incident Response**      | Contain and eradicate threats                 | Block malicious sender & reset account    |
