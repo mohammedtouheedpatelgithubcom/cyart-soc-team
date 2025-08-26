@@ -1,4 +1,3 @@
-# Detailed Explanation of Key Incident Response 
 
 ## 1. NIST SP 800-61 Incident Handling Guide: Lifecycle Details
 
