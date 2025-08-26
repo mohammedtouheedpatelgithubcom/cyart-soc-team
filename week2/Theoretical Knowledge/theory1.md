@@ -12,10 +12,10 @@ Alert priority levels in Security Operations Centers (SOCs) are essential for ca
 
 | Level     | Description                                                                                            | Example                                   |
 |-----------|--------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| Critical  | Imminent severe damage (ransomware, data breach, major service outage). Requires immediate action.      | Ransomware encryption in production server[web:6] |
-| High      | Serious threats (privilege escalation, unauthorized admin access) targeting important assets.            | Attacker gains admin access[web:6]        |
-| Medium    | Moderate risk incidents (malware, phishing, limited scope misconfigurations).                           | Isolated malware infection[web:6]         |
-| Low       | Minor or informational events with low likelihood of escalation.                                        | Blocked memory exploit[web:6]             |
+| Critical  | Imminent severe damage (ransomware, data breach, major service outage). Requires immediate action.      | Ransomware encryption in production server|
+| High      | Serious threats (privilege escalation, unauthorized admin access) targeting important assets.            | Attacker gains admin access              |
+| Medium    | Moderate risk incidents (malware, phishing, limited scope misconfigurations).                           | Isolated malware infection                |
+| Low       | Minor or informational events with low likelihood of escalation.                                        | Blocked memory exploit                    |
 
 Severity encapsulates both the level of impact and urgency for response, guiding escalation protocols.
 
@@ -23,10 +23,10 @@ Severity encapsulates both the level of impact and urgency for response, guiding
 
 ### Assignment Criteria
 
-- **Asset Criticality:** Greater priority for threats targeting essential assets, e.g. production servers, databases[web:6].
-- **Exploit Likelihood:** Incidents involving known vulnerabilities with public exploits warrant higher urgency, such as Log4Shell (CVE-2021-44228)[web:3][web:7].
-- **Business Impact:** Financial, reputational, or compliance risks escalate the priority of incidents[web:2][web:4].
-- **CVSS Scores:** Numerical mapping helps standardize severity and urgency; a score of 9.8 is Critical, especially on important systems[web:1][web:3][web:11].
+- **Asset Criticality:** Greater priority for threats targeting essential assets, e.g. production servers, databases.
+- **Exploit Likelihood:** Incidents involving known vulnerabilities with public exploits warrant higher urgency, such as Log4Shell (CVE-2021-44228).
+- **Business Impact:** Financial, reputational, or compliance risks escalate the priority of incidents.
+- **CVSS Scores:** Numerical mapping helps standardize severity and urgency; a score of 9.8 is Critical, especially on important systems.
 
 ---
 
@@ -45,23 +45,23 @@ A global standard for measuring and communicating vulnerability severity:
 | 9.0–10.0   | Critical  |
 
 **Metric Groups:**
-- **Base:** Intrinsic vulnerability attributes (exploitability, impact scope)[web:1][web:3][web:11].
-- **Temporal:** Time-sensitive contextual changes (exploit code availability, remediation)[web:3].
-- **Environmental:** Local organization context (asset value, controls, likely impact)[web:3][web:11].
+- **Base:** Intrinsic vulnerability attributes (exploitability, impact scope).
+- **Temporal:** Time-sensitive contextual changes (exploit code availability, remediation).
+- **Environmental:** Local organization context (asset value, controls, likely impact).
 
-Scores are provided as numbers and as vector strings, so scoring can always be recalculated and verified[web:1][web:3][web:12].
+Scores are provided as numbers and as vector strings, so scoring can always be recalculated and verified.
 
 ### SOC Tools (Splunk, SIEMs)
 
-- Alert risk scores combine severity, threat likelihood, asset value, and external intelligence feeds to automate ticket prioritization[web:4][web:6].
-- Splunk and similar platforms often auto-escalate incidents above CVSS 9 or targeting key assets[web:4][web:6].
+- Alert risk scores combine severity, threat likelihood, asset value, and external intelligence feeds to automate ticket prioritization.
+- Splunk and similar platforms often auto-escalate incidents above CVSS 9 or targeting key assets.
 
 ---
 
 ## Case Study: Log4Shell (CVE-2021-44228)
 
-- CVSS score of 9.8 (Critical) due to remote code execution and prevalence across environments[web:3][web:7].
+- CVSS score of 9.8 (Critical) due to remote code execution and prevalence across environments.
 - Elevated immediately to Critical, prompting rapid patching and monitoring in real SOCs.
-- SOCs used both CVSS scores and business context to prioritize assets for urgent remediation[web:3][web:7].
+- SOCs used both CVSS scores and business context to prioritize assets for urgent remediation.
 
 ---
